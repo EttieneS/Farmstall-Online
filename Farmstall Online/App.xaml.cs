@@ -14,7 +14,7 @@ namespace Farmstall_Online
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new LoginPage();//new AppShell();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Farmstall_Online.Views;
 using Farmstall_Online.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,9 +16,6 @@ namespace Farmstall_Online.Views
         public LoginPage()
         {
             InitializeComponent();
-            InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             this.BindingContext = new LoginViewModel();
         }
 
